@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #abdde4;
+    margin: 0;
+}
+.stopwatch {
+    background: rgb(204, 204, 171);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.buttons, .laps {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.buttons button, .laps button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #83bcd8;
+}
+.buttons button:hover, .laps button:hover {
+    background-color: #c38484;
+}
+.laps {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+h1 { 
+color: rgb(57, 118, 215); 
+text-align: center; 
+}
+.lap-slide {
+    animation: slide 0.5s ease-out;
+}
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
